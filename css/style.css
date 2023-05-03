@@ -8,17 +8,20 @@ body, input, button{
     font-family: 'Montserrat', sans-serif;
 }
 
-a:hover,
 a:active,
 a:focus,
 a { 
-  color: #fff;
-  text-decoration: none;
+    color: #A3A3A3;
+    text-decoration: none;
 }
 
-.positio-relative{
+a:hover{
+    color: #fff;
+}
+
+.positio-relative {
     position: relative;
-    bottom: 15px;
+    bottom: 8px;
     margin-left: 5px;
 }
 
@@ -27,27 +30,23 @@ ul, li{
     list-style-type: none;
     font-weight: 700;
 }
+
 /* =========== navi side bar =========== */
 .navi-sidebar{
     position: fixed;
     z-index: 99;
-    height: 100vh;
+    height: calc(100% - 150px);
     background-color: #000000;
-    width: 500px;
+    width: 250px;
 }
 
 .container-sidebar{
+    height: 100%;
     width: 100%;
-    margin: 0 auto;
-}
-
-.row-sidebar{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .col-sidebar{
+    height: 100%;
     width: 100%;
     margin-left: 20px;
     margin-top: 25px;
@@ -55,29 +54,140 @@ ul, li{
 /* =========== menu choice =========== */
 .content-sidebar{
     width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.logo-menu{
-    background-color: purple;
-}
+
 .sidebar-imgs-list{
-    width: 10%;
+    width: 15%;
 }
 
 .logo-container{
-    width: 60%;
+    width: 75%;
     margin-bottom: 25px;
 }
 /* =========== playlist menu =========== */
 .content-playlist{
-    background-color: yellow;
     margin-top: 25px;
 }
+
+.content-playlist > h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.create-playlist{
+    background-color: #A3A3A3;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+.add{
+    position: relative;
+    bottom: 4px;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.add-align{
+    display: flex;
+    align-items: center;
+}
+
+.playlis-list{
+    margin-bottom: 30px;
+}
+
+.hover-playlist{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hover-playlist:hover .create-playlist{
+    background-color: #fff;
+}
+
+.hover-playlist:hover .hover-add{
+    color: #fff;
+}
+
+/* =========== user and download part =========== */
+
+.user{
+    margin-bottom: 40px;
+}
+
+.install-app{
+    color: #A3A3A3;
+    display: flex;
+    align-items: center;
+}
+
+.install-app:hover .download{
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.download{
+    margin-right: 15px;
+    border: 1px solid #A3A3A3;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.fa-arrow-down-long{
+    position: relative;
+    top: 2px;
+}
+
+.download-txt{
+    font-weight: 600;
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.account-avatar{
+    background-image: url(../img/profile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #A3A3A3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-name > h4{
+    color: #fff;
+}
+
+
+
 /* =========== END navi side bar =========== */
 /* =========== footer navi bar =========== */
 .navi-bottombar{
     background-color: black;
     width: 100vw;
-    height: 250px;
+    height: 150px;
     position: fixed;
     bottom: 0;
     left: 0;

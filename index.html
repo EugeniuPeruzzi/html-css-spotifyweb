@@ -17,22 +17,50 @@
             <div class="row-sidebar">
                 <div class="col-sidebar">
                     <div class="content-sidebar">
-                        <!-- =========== menu choice =========== -->
-                        <div class="logo-menu">
-                            <div class="logo-container">
-                                <img src="./img/logo.svg" alt="spotify-logo">
+                        <div class="space-between">
+                            <!-- =========== menu choice =========== -->
+                            <div class="logo-menu">
+                                <div class="logo-container">
+                                    <img src="./img/logo.svg" alt="spotify-logo">
+                                </div>
+                                <ul>
+                                    <li><img class="sidebar-imgs-list" src="./img/home.svg" alt=""><a class="positio-relative" href="#">Home</a></li>
+                                    <li><img class="sidebar-imgs-list" src="./img/search.svg" alt=""><a class="positio-relative" href="#">Cerca</a></li>
+                                    <li><img class="sidebar-imgs-list" src="./img/libreria.svg" alt=""><a class="positio-relative" href="#">La tua libreria</a></li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li><img class="sidebar-imgs-list" src="./img/home.svg" alt=""><a class="positio-relative" href="#">Home</a></li>
-                                <li><img class="sidebar-imgs-list" src="./img/search.svg" alt=""><a class="positio-relative" href="#">Cerca</a></li>
-                                <li><img class="sidebar-imgs-list" src="./img/libreria.svg" alt=""><a class="positio-relative" href="#">La tua libreria</a></li>
-                            </ul>
+                            <!-- =========== playlist menu =========== -->
+                            <div class="content-playlist">
+                                <h4>playlist</h4>
+                                <div class="hover-playlist">
+                                    <div class="create-playlist"><span class="add">+</span></div><a class="hover-add" href="#">Crea Playlist</a>
+                                </div>
+                                <!-- need to figure out overflow property -->
+                                <div class="overflow">
+                                    <ul class="playlis-list overlflow">
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                        <li class="playlis-list"><a href="#">Nome playlist</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <!-- =========== playlist menu =========== -->
-                        <div class="content-playlist">
-                            <h5>playlist</h5>
+                        <!-- =========== user and download part =========== -->
+                        <div class="user">
+                            <div class="install-app">
+                                <div class="download"><i class="fa-solid fa-arrow-down-long"></i></div>
+                                <div class="download-txt"><a href="#">Installa app</a></div>
+                            </div>
+                            <hr>
+                            <div class="account">
+                                <div class="account-avatar"></div>
+                                <div class="account-name"><h4>John Doe</h4></div>
+                            </div>
                         </div>
-                        <div class="user"></div>
                     </div>
                 </div>
             </div>

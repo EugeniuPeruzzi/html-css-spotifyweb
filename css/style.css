@@ -269,6 +269,26 @@ hr{
 .fa-folder:hover{
     color: #fff;
 }
+/* =========== footer player controls and view side =========== */
+.col-bottombar-40{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-player-control > a{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.bottom-player-control{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* =========== footer volume and view side =========== */
 .right-col-30{

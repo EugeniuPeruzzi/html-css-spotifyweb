@@ -222,6 +222,7 @@ hr{
 }
 /* =========== top menu =========== */
 .main-top-menu{
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }
@@ -237,6 +238,23 @@ hr{
 
 #green-bottom{
     border-bottom: 2px solid #ADFF2F;
+}
+/* =========== recently played =========== */
+.for-user-container{
+    width: 100%;
+    background-color: yellow;
+}
+
+.for-user-row{
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.for-user-col-20{
+    background-color: red;
+    height: 100px;
+    width: calc(20% - 50px);
+    margin: 5px;
 }
 
 /* =========== footer navi bar =========== */

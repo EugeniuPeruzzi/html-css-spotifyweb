@@ -35,7 +35,7 @@ ul, li{
 .navi-sidebar{
     position: fixed;
     z-index: 99;
-    height: calc(100% - 150px);
+    height: calc(100% - 100px);
     background-color: #000000;
     width: 250px;
 }
@@ -185,35 +185,162 @@ hr{
 /* =========== END navi side bar =========== */
 /* =========== footer navi bar =========== */
 .navi-bottombar{
-    background-color: black;
+    background-color: #282828;
     width: 100vw;
-    height: 150px;
+    height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
     z-index: 100;
 }
 
-.container-bottombar{
-    height: 200px;
-    background-color: yellow;
-}
-
 .row-bottombar{
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col-bottombar-30{
-    height: 50px;
-    width: calc(30% - 50px);
-    background-color: blue;
+    width: calc(20% - 50px);
 }
 
 .col-bottombar-40{
-    width: calc(40% - 100px);
-    height: 50px;
-    /* width: 50px; */
+    height: 100px;
+    width: calc(60% - 150px);
     background-color: purple;
+}
+/* =========== footer song side =========== */
+.col-30-content{
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.left-col-30{
+    margin-left: 10px;
+}
+
+.song-img-title{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-img-title > img{
+    width: 100%;
+}
+
+.text-song{
+    width: calc(60% - 20px);
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+#album-artist{
+    color: #fff;
+    font-size: 1rem;
+}
+
+#album-artist:hover{
+    text-decoration: underline;
+}
+
+#album-title{
+    font-size: 0.8rem;
+}
+
+.folder-heart{
+    width: 20%;
+    font-size: 1.3rem;
+    color: #A3A3A3;
+}
+
+.fa-folder{
+    margin-left: 10px;
+}
+
+.fa-heart:hover{
+    color: #fff;
+}
+.fa-folder:hover{
+    color: #fff;
+}
+
+/* =========== footer volume and view side =========== */
+.right-col-30{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.footer-icons{
+    width: 20%;
+    color: #fff;
+    display: flex; 
+}
+
+.list-icons-footer{
+    margin-left: 20px;
+}
+
+/* volume css */
+.line-grey{
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 75px;
+    position: relative;
+    top: 7px;
+    height: 5px;
+    background-color: #5A5A5A;
+    width: 30%;
+}
+
+.line-white{
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 75px;
+    position: absolute;
+    right: 70px;
+    height: 5px;
+    background-color: #d4d2d2;
+    width: 40%;
+}
+
+.green-pointer{
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 70px;
+    height: 5px;
+    background-color: #ADFF2F;
+    width: 40%;
+}
+
+.pointer{
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -8px;
+    left: 40px;
+    height: 20px;
+    background-color: #fff;
+    width: 20px;
+}
+
+.line-grey:hover .pointer{
+    display: block;
+}
+.line-grey:hover .green-pointer{
+    display: block;
+}
+
+.line-grey:hover .line-white{
+    display: none;
 }
 /* =========== END footer navi bar =========== */

@@ -30,7 +30,7 @@ ul, li{
     list-style-type: none;
     font-weight: 700;
 }
-
+/* =========== main =========== */
 /* =========== navi side bar =========== */
 .navi-sidebar{
     position: fixed;
@@ -183,10 +183,15 @@ hr{
 .account-name > h4{
     color: #fff;
 }
-
-
-
 /* =========== END navi side bar =========== */
+/* =========== main part in col 70 =========== */
+.container-col-70{
+    background-color: #141922;
+    height: 100vh;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
 /* =========== footer navi bar =========== */
 .navi-bottombar{
     background-color: #282828;

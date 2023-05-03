@@ -214,13 +214,30 @@ hr{
 /* =========== END navi side bar =========== */
 /* =========== main part in col 70 =========== */
 .container-col-70{
-    padding-top: 130px;
+    padding-top: 120px;
     background-color: #141922;
     height: 100vh;
     width: calc(100% - 250px);
     margin-left: 250px;
 }
+/* =========== top menu =========== */
+.main-top-menu{
+    display: flex;
+    justify-content: center;
+}
 
+.list-top-menu{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.list-item-top-menu{
+    margin: 0px 15px;
+}
+
+#green-bottom{
+    border-bottom: 2px solid #ADFF2F;
+}
 
 /* =========== footer navi bar =========== */
 .navi-bottombar{

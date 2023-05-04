@@ -19,12 +19,6 @@ a:hover{
     color: #fff;
 }
 
-.positio-relative {
-    position: relative;
-    bottom: 8px;
-    margin-left: 5px;
-}
-
 ul, li{
     display: block;
     list-style-type: none;
@@ -66,6 +60,7 @@ ul, li{
     height: calc(100% - 100px);
     background-color: #000000;
     width: 250px;
+    min-height: 450px;
 }
 
 .container-sidebar{
@@ -79,9 +74,6 @@ ul, li{
 
 .col-sidebar{
     height: 100%;
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 25px;
 }
 /* =========== menu choice =========== */
 .content-sidebar{
@@ -90,15 +82,33 @@ ul, li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
+.sidebar-list-item{
+    margin-bottom: 5px;
+}
+
+.positio-relative {
+    position: relative;
+    bottom: 8px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+
 .sidebar-imgs-list{
-    width: 15%;
+    width: 12%;
 }
 
 .logo-container{
     width: 75%;
     margin-bottom: 25px;
+}
+
+#border-left{
+    border-left: 4px solid #ADFF2F;
 }
 /* =========== playlist menu =========== */
 .content-playlist{
@@ -108,7 +118,7 @@ ul, li{
 .content-playlist > h4{
     text-transform: uppercase;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
@@ -136,6 +146,8 @@ ul, li{
 
 .playlis-list{
     margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .hover-playlist{
@@ -214,12 +226,18 @@ hr{
 /* =========== END navi side bar =========== */
 /* =========== main part in col 70 =========== */
 .container-col-70{
+    padding-bottom: 120px;
     padding-top: 120px;
     background-color: #141922;
-    height: 100vh;
+    height: 100%;
     width: calc(100% - 250px);
     margin-left: 250px;
 }
+
+.col-main-70{
+    overflow-y: auto;
+}
+
 /* =========== top menu =========== */
 .main-top-menu{
     margin-bottom: 40px;
@@ -241,21 +259,75 @@ hr{
 }
 /* =========== recently played =========== */
 .for-user-container{
-    width: 100%;
-    background-color: yellow;
+    max-width: 100%;
 }
 
 .for-user-row{
     margin-bottom: 50px;
     display: flex;
+    flex-wrap: nowrap;
+}
+
+
+h2{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 1.9rem;
 }
 
 .for-user-col-20{
-    background-color: red;
-    height: 100px;
-    width: calc(20% - 50px);
-    margin: 5px;
+    width: 20%;
 }
+
+.for-user-col-17{
+    width: 17%;
+}
+
+.col-20-content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-20-content > .main-album-name{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.col-20-content > .main-artist-name{
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #6F7276;
+}
+
+.for-user-container > span{
+    color: #6F7276;
+    display: inline-block;
+    margin-left: 42px;
+    margin-top: 10px;
+}
+
+.circle{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+}
+
+.one{
+    background-image: url(../img/youg.jpeg);
+}
+
+.two{
+    background-image: url(../img/einaudi.jpeg);
+}
+
 
 /* =========== footer navi bar =========== */
 .navi-bottombar{

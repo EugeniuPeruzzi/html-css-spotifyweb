@@ -79,6 +79,56 @@ ul, li{
 .col-sidebar{
     height: 100%;
 }
+
+
+/* phone navi */
+.phone-navi{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    height: calc(100% - 100px);
+    background-color: #000000;
+    width: 70px;
+    min-height: 450px;
+}
+
+.logo-phone{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.logo-phone > img{
+    width: 100%;
+}
+
+.phone-icon-list{
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.logo-icons-phone{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.phone-download{
+    width: 40%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.phone-download > img{
+    width: 100%;
+}
+
+.user-phone{
+    margin-left: 20px;
+}
+
 /* =========== menu choice =========== */
 .content-sidebar{
     width: 80%;
@@ -681,4 +731,24 @@ h2{
     .col-bottombar-30 {
         width: 50%;
     }
+}
+
+@media screen and (max-width: 568px) {
+    .phone-navi{
+        display: block;
+    }
+
+    .navi-sidebar{
+        display: none;
+    }
+
+
+    .container-col-70 {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+    
+    .overlay {
+        height: 175px;
+      }
 }

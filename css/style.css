@@ -447,6 +447,7 @@ h2{
     left: 0;
     right: 0;
     z-index: 100;
+    padding: 15px;
 }
 
 .container-bottombar{
@@ -461,29 +462,22 @@ h2{
 }
 
 .col-bottombar-30{
-    width: calc(20% - 90px);
+    width: 270px;
+    /* background-color: #ADFF2F; ==================================================== */
+    margin: 10px;
 }
 
 .col-bottombar-40{
-    height: 100px;
-    width: calc(60% - 150px);
+    width: 60%;
 }
 /* =========== footer song side =========== */
 .col-30-content{
-    width: calc(100% - 10px);
     display: flex;
     align-items: center;
-}
-
-.left-col-30{
-    margin-left: 10px;
 }
 
 .song-img-title{
     width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .song-img-title > img{
@@ -510,8 +504,7 @@ h2{
 }
 
 .folder-heart{
-    width: 20%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #A3A3A3;
 }
 
@@ -617,31 +610,23 @@ h2{
 
 
 /* =========== footer volume and view side =========== */
-.right-col-30{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 40px;
-}
 
 .footer-icons{
-    width: 20%;
     color: #fff;
-    display: flex; 
 }
 
-.list-icons-footer{
+.icons-volume{
     margin-left: 20px;
 }
 
 /* volume css */
 .line-grey{
     border-radius: 5px;
-    cursor: pointer;
-    margin-left: 75px;
+    margin-left: 30px;
     position: relative;
     height: 5px;
     background-color: #5A5A5A;
-    width: 30%;
+    width: 45%;
 }
 
 .line-white{
@@ -667,12 +652,12 @@ h2{
 }
 
 .pointer{
-    display: none;
+    /* display: none; */
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
     bottom: -8px;
-    left: 20%;
+    left: 30%;
     height: 20px;
     background-color: #fff;
     width: 20px;
@@ -694,24 +679,21 @@ h2{
 /* media querry */
 @media screen and (max-width: 1950px) {
 
-    .col-bottombar-30 {
-        width: 30%;
-    }
-
     .col-bottombar-40{
         width: 60%;
     }
 
-    .song-img-title {
-        width: 15%;
+    .line-grey {
+        margin-left: 15px;
+        width: 46%;
     }
 
-    .text-song {
-        width: calc(30% - 20px);
+    .icons-volume {
+        margin-left: 15px;
     }
 
-    .col-30-content {
-        margin-left: 0;
+    .folder-heart {
+        font-size: 1rem;
     }
 
     .overlay{
@@ -724,6 +706,14 @@ h2{
         width: calc(50% - 30px);
     }
 
+    .line-grey-time{
+        margin: 0px 20px;
+    }
+
+    .col-bottombar-40 {
+        width: 29%;
+    }
+
     .for-user-col-17{
         width: calc(50% - 10px);
     }
@@ -731,18 +721,9 @@ h2{
     .for-user-row{
         flex-wrap: wrap;
     }
-    
-    .col-bottombar-40 {
-        width: 40%;
-    }
 
-    .line-grey-time{
-        margin: 0px 10px;
-        width: 100%;
-    }
-
-    .col-bottombar-30 {
-        width: 50%;
+    .navi-bottombar{
+        min-width: 745px;
     }
 }
 
@@ -759,6 +740,7 @@ h2{
     .container-col-70 {
         width: calc(100% - 70px);
         margin-left: 70px;
+        min-width: 568px;
     }
     
     .overlay {

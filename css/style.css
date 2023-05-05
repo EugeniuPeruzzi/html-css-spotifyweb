@@ -30,30 +30,24 @@ ul, li{
     height: 95px;
     background-color: rgba(0, 0, 0, 0.445);
     position: fixed;
-    z-index: 98;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    z-index: 107;
+    top: 0;
+    right: 0;
+    padding: 30px;
 }
 
 .btn{
-    text-transform: uppercase;
+    padding: 10px 40px;
     background-color: transparent;
-    font-size: 0.8rem;
     color: #fff;
-    font-weight: 400;
+    border-color: #fff;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
-.button{
-    margin-right: 30px;
-    text-align: center;
-    color: #fff;
-    padding: 10px 30px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-}
-
-.button:hover{
+.btn:hover{
     transform: scale(1.2);
 }
 /* =========== main =========== */
@@ -292,8 +286,8 @@ ul, li{
 /* =========== END navi side bar =========== */
 /* =========== main part in col 70 =========== */
 .container-col-70{
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-bottom: 95px;
+    padding-top: 95px;
     background-color: #141922;
     height: 100%;
     width: calc(100% - 250px);

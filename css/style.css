@@ -267,7 +267,7 @@ ul, li{
     font-weight: 600;
 }
 
-hr{
+.user-line{
     margin: 20px 0px;
 }
 
@@ -306,25 +306,41 @@ hr{
 
 /* =========== top menu =========== */
 .main-top-menu{
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .list-top-menu{
-    display: flex;
     text-transform: uppercase;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .list-item-top-menu{
     font-size: 0.6;
     color: #717171;
     font-weight: 400;
-    margin: 0px 15px;
+    margin: 15px 15px;
+    display: inline-block;
 }
 
-#green-bottom{
+.green-bottom{
+    position: relative;
+    top: 30px;
+}
+.green-line ,.trasparent-line{
+    width: 40%;
+    margin-left: 30px;
+}
+
+.green-line{
     border-bottom: 2px solid #ADFF2F;
+}
+
+.trasparent-line{
+    color: rgba(255, 0, 0, 0);
 }
 /* =========== recently played =========== */
 .for-user-container{
@@ -722,10 +738,6 @@ h2{
         flex-wrap: wrap;
     }
     
-    .main-top-menu{
-        width: 991px;
-    }
-
     .col-bottombar-40 {
         width: 40%;
     }

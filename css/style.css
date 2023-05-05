@@ -292,6 +292,7 @@ ul, li{
     height: 100%;
     width: calc(100% - 250px);
     margin-left: 250px;
+    padding-left: 50px;
 }
 
 .col-main-70{
@@ -337,53 +338,40 @@ ul, li{
     color: rgba(255, 0, 0, 0);
 }
 /* =========== recently played =========== */
-.for-user-container{
-    /* max-width: 1170px; */
-    margin: 0 auto;
-}
 
 .for-user-row{
-    margin-bottom: 50px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
 }
-
 
 h2{
     color: #fff;
-    margin-left: 40px;
     font-size: 1.9rem;
 }
 
 .for-user-col-20{
-    width: calc(20% - 30px);
-}
-
-.for-user-col-17{
-    width: 17%;
+    width: calc(17% - 10px);
+    margin-right: 20px;
 }
 
 .col-20-content{
-    width: calc(100% - 30px);
+    width: 100%;
     position: relative;
-    margin: 0px 10px;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.album-img{
+.cover-album{
     width: 100%;
 }
 
-.overlay{
+.background-trasparent{
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
-    height: 370px;
+    height: 100%;
     width: 100%;
     background-color: #0000005d;
 }
@@ -401,7 +389,10 @@ h2{
     font-size: 3rem;
 }
 
-.col-20-content:hover .overlay{
+.img-album-2cols, .img-album:hover .background-trasparent{
+    display: block;
+}
+.img-album-2cols:hover .background-trasparent{
     display: block;
 }
 
@@ -423,8 +414,12 @@ h2{
 .for-user-container > span{
     color: #6F7276;
     display: inline-block;
-    margin-left: 42px;
     margin-top: 10px;
+}
+
+.img-album{
+    width: 90%;
+    position: relative;
 }
 
 .circle > img{
@@ -745,5 +740,14 @@ h2{
     
     .overlay {
         height: 175px;
-      }
+    }
+
+    .user{
+        padding: 0;
+
+    }
+    
+    .account{
+        margin-bottom: 10px;
+    }
 }
